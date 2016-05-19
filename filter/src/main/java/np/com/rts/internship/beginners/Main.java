@@ -16,16 +16,33 @@ public class Main {
     add(new Animal("omnivore", "human", 2));
   }};
 
-  ArrayList<Animal> herbivores = new ArrayList<>();
+  ArrayList<String> herbivores = new ArrayList<>();
   ArrayList<Animal> carnivores = new ArrayList<>();
   ArrayList<Animal> omnivores = new ArrayList<>();
 
   public Main() {
     // Write your code here
+      for(Animal obj : originalList) {
+          if(obj.get(type) == "herbivore") {
+              herbivores.add(obj);
+          }
+
+          for(Animal obj : originalList) {
+              if(obj.get(type) == "carnivore") {
+                  carnivores.add(obj);
+              }
+
+              for(Animal obj : originalList) {
+                  if(obj.get(type) == "omnivore") {
+                      omnivores.add(obj);
+
+      }
+
+
 
 
   }
-  public static void main(String[] args) {
+              public static void main(String[] args) {
     new Main();
   }
 }
