@@ -23,26 +23,26 @@ public class Main {
   public Main() {
     // Write your code here
       for(Animal obj : originalList) {
-          if(obj.get(type) == "herbivore") {
+          if(obj.getType() == "herbivore") {
               herbivores.add(obj);
           }
 
           for(Animal obj : originalList) {
-              if(obj.get(type) == "carnivore") {
+              if (obj.getType() == "carnivore") {
                   carnivores.add(obj);
               }
 
-              for(Animal obj : originalList) {
-                  if(obj.get(type) == "omnivore") {
+              for (Animal obj : originalList) {
+                  if (obj.getType() == "omnivore") {
                       omnivores.add(obj);
 
+                  }
+              }
+
+
+          }
+
+      public static void main(String[] args) { //error occured  illegal start of epression, I think other code is fine
+          new Main();
       }
-
-
-
-
   }
-              public static void main(String[] args) {
-    new Main();
-  }
-}
